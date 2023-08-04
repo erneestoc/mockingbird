@@ -11,6 +11,7 @@ class SourceFileAuxiliaryParser: SyntaxVisitor {
 
   init(with lazyConverter: @escaping () -> SourceLocationConverter) {
     self.lazyConverter = lazyConverter
+    super.init(viewMode: .all)
   }
   
   func parse<SyntaxType: SyntaxProtocol>(_ node: SyntaxType) -> Self {
