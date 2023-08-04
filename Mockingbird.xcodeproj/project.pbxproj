@@ -235,6 +235,7 @@
 		D3EC1C0B2490BB92004E555F /* SourceTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC1C0A2490BB92004E555F /* SourceTarget.swift */; };
 		D3EC1C0D2490BEB5004E555F /* TestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC1C0C2490BEB5004E555F /* TestTarget.swift */; };
 		D3EC1C0F2490EC5C004E555F /* Path+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EC1C0E2490EC5C004E555F /* Path+Codable.swift */; };
+		E7EE900A2A7D960900059EFC /* SwiftParser in Frameworks */ = {isa = PBXBuildFile; productRef = E7EE90092A7D960900059EFC /* SwiftParser */; };
 		OBJ_1019 /* ChildMockMockableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_212 /* ChildMockMockableTests.swift */; };
 		OBJ_1020 /* ChildMockStubbableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_213 /* ChildMockStubbableTests.swift */; };
 		OBJ_1021 /* ChildProtocolMockMockableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_214 /* ChildProtocolMockMockableTests.swift */; };
@@ -1076,6 +1077,7 @@
 			files = (
 				285C8E0D277A87A200DE525A /* MockingbirdCommon.framework in Frameworks */,
 				287F852525194EF5007D135D /* SourceKittenFramework in Frameworks */,
+				E7EE900A2A7D960900059EFC /* SwiftParser in Frameworks */,
 				287F852E25195011007D135D /* XcodeProj in Frameworks */,
 				287F852225194E16007D135D /* SwiftSyntax in Frameworks */,
 			);
@@ -2274,6 +2276,7 @@
 				287F852125194E16007D135D /* SwiftSyntax */,
 				287F852425194EF5007D135D /* SourceKittenFramework */,
 				287F852D25195011007D135D /* XcodeProj */,
+				E7EE90092A7D960900059EFC /* SwiftParser */,
 			);
 			productName = MockingbirdGenerator;
 			productReference = "Mockingbird::MockingbirdGenerator::Product" /* MockingbirdGenerator.framework */;
@@ -3662,7 +3665,7 @@
 			repositoryURL = "https://github.com/apple/swift-syntax.git";
 			requirement = {
 				kind = exactVersion;
-				version = 0.50500.0;
+				version = 508.0.0;
 			};
 		};
 		287F852325194EF5007D135D /* XCRemoteSwiftPackageReference "SourceKitten" */ = {
@@ -3765,6 +3768,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28E2A56D277E8F43002975B3 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;
+		};
+		E7EE90092A7D960900059EFC /* SwiftParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287F852025194E16007D135D /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftParser;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
